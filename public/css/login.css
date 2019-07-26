@@ -1,0 +1,137 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+a
+{
+    list-style: none;
+}
+
+header
+{
+    width: 100%;
+    height: 60px;
+    background-color:lightgray;
+    position:fixed;
+    top: 0;
+    z-index: 99;
+
+}
+
+nav
+{
+    width: 1000px;
+    height: 60px;
+    margin:0 auto;
+    position: relative;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content:space-between;
+}
+
+.logo
+{
+    width: 132px;
+    height: 60px;
+    /* background-color:greenyellow; */
+    line-height: 60px;
+}
+
+.logo a
+{
+    display: block;
+    width: 132px;
+    height: 28px;
+    font-size: 22px;
+    margin: 0 auto;
+    
+
+}
+
+nav>ul
+{
+width: 600px;
+height: 60px;
+list-style: none;
+/* background-color:yellowgreen; */
+}
+
+nav>ul>li
+{
+    width: 72px;
+    height: 60px;
+    float: left;
+    padding: 0 0 0 10px;
+    font-size: 16px;
+    line-height: 60px;
+}
+
+.login
+{
+    height: 700px;
+    width: 100%;
+    /* background-color:yellow; */
+}
+
+.contanier
+{
+    width: 1000px;
+    height: 700px;
+    margin: 0 auto;
+    /* background-color:orange; */
+    position: relative;
+}
+
+.login-area
+{
+    width: 800px;
+    height: 400px;
+    background-color:lightgrey;
+    position: absolute;
+     margin-left: 100px;
+     margin-top:150px;
+}
+
+.login-title
+{
+    width: 800px;
+    height: 50px;
+    background-color:red;
+    line-height: 50px;
+}
+
+.login-body
+{
+    width: 400px;
+    height: 200px;
+    margin-left: 200px;
+    /* background-color:blue; */
+    margin-top: 75px;
+    position:relative;
+    
+}
+
+.login-body form
+{
+    position: absolute;
+    margin-top: 30px
+}
+
+.login-body form input
+{
+    margin-top: 20px;
+}
+
+.information
+{
+    margin-top: 20px;
+}
+.information li
+{
+    list-style: none;
+    float: left;
+    margin-left: 10px;
+}
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+       <nav>
+           <div class="logo">
+               <a href="#">微凉的博客</a>
+           </div>
+           <ul>
+              
+                 <li><a href="login.html">登录</a></li>
+                 <li><a href="regist.html">注册</a></li>
+                 <li>首页</li>
+                 <li>文章</li>
+                 <li>相册</li>
+                 <li><a href=""></a></li>
+                 <li>关于</li>
+           </ul>
+
+           <div class="container">
+                {{if user}}
+                <div class="logout">
+                    <span class="user">当前帐号:{{user.username}}</span>
+                    <a href="/logout">退出登录</a>
+                </div>
+                {{else}}
+                <div class="login">
+                    <a href="/login">登录</a>
+                    <a href="/regist">注册</a>
+                </div>
+                {{/if}}
+            </div> 
+       </nav>
+    </header>
+     
+    <div class="content">
+     <div class="contanier">
+         <div class="aside">
+             <div class="about">
+                 <h2>关于</h2>
+                 <ul>
+                     <i>
+                         <img src="../img/0.jpg" alt="" style="display: inline-block">
+
+                    </i>
+                    <p>
+                            <b>杨青</b>
+                            一个80后草根女站长！09年入行。一直潜心研究web前端技术，
+                            一边工作一边积累经验，分享一些个人博客模板，以及SEO优化等心得。
+                        </p>
+                    
+                 </ul>
+             </div>
+             <div class="wdxc">
+                 <div class="word">相册</div>
+                 <div class="wdxc-area">
+                    <img src="../img/1.jpg" alt="" style="width: 272px;height: 184px;">
+                 </div>
+             </div>
+             <div class="search">
+                 <form action="" method="post">
+                     <input type="text" id="txt" placeholder="请输入关键字">
+                     <input type="submit" value="搜索" id="submit">
+                 </form>
+             </div>
+             <div class="fenlei">
+                 <div class="fenlei-title">
+                     分类
+                     <ul>
+                         <li><a href="#">文章(13)</a></li>
+                         <li><a href="#">文章(8)</a></li>
+                     </ul>
+                 </div>
+
+             </div>
+         </div>
+         <div class="content-menu">
+             <li style="margin-top: 70px;"></li>
+             <li></li>
+             <li></li>
+         </div>
+     </div>
+    </div>
+</body>
+</html>
